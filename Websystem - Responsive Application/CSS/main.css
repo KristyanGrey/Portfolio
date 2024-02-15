@@ -1,0 +1,214 @@
+:root{
+    --first-font: 'Freehand', cursive;
+    --second-font: 'Montserrat', sans-serif;
+    --third-font:  'Fjalla One', sans-serif;
+    --forth-font:  'Bebas Neue', cursive;
+    --fifth-font: 'Poppins', sans-serif;
+
+    --color-premary: #0088a9;
+    --color-white: ; 
+}
+
+*, h1, span, a, p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #edf0f1;
+}
+svg{
+    font-weight:bold;
+    max-width:600px;
+    height:100%;
+}
+
+
+/* Wrap__animation */
+.body__wrapper{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: var(--forth-font);
+}
+.wrapper{
+    box-sizing: content-box;
+    height: 12%;
+    padding: 50px 30px;
+    display: flex;
+    font-size: 45px;
+    font-weight: 500;
+}
+.words{
+    overflow: hidden;
+    color: #0e6ffc;
+}
+.wrapper span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: word__spinning 6s infinite;
+}
+@keyframes word__spinning {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-112%);
+    }
+    50%{
+         transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+/* navigation__style */
+body{
+    background-color: #11121A;
+    padding: 0;
+    margin: 0;
+}
+.menu__bar{
+    font-family: var(--second-font);
+}
+/* Information__syle */
+.my__typhograpy{
+    font-family: var(--second-font);
+}
+.my__typhograpy h1{
+    font-size: 2rem;
+}
+.my__typhograpy span{
+    color: #0088a9;
+}
+/* parallax__container__style */
+.img__parallax{
+    background-image: url(../img/background/dark__BG.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* progress__style */
+.container__progress span{
+    font-family: var(--second-font);
+    text-transform: uppercase;
+}
+
+.fnt__professional{
+    font-size: 3rem;
+    font-family: var(--forth-font);
+}
+.fnt__professional span {
+    font-family: var(--forth-font);
+    color: #0088a9;
+}
+.fnt__professional span:hover {
+    font-family: var(--forth-font);
+    color: aqua;
+    transition: 0.5s;
+}
+
+.container__progress h3{
+    font-family: var(--forth-font);
+    padding-top: 30px;
+}
+
+/* news__jumbotron__style */
+.container__jumbotron{
+    font-family: var(--forth-font);
+    background-color: black;
+}
+.container__jumbotron h1{
+    font-size: 5rem;
+    color: #44acec;
+}
+.container__jumbotron span{
+    font-size: 5rem;
+}
+.container__jumbotron button{
+    font-family: var(--second-font);
+}
+.container__jumbotron p{
+    font-family: var(--forth-font);
+    font-size: 5rem;
+    color: #a0a0a1;
+    justify-content: center;
+}
+
+/* contact__style */   
+.fnt__contact h2{
+    font-size: 4rem;
+    color: #44acec;
+    font-family: var(--forth-font);
+    padding: 20px;
+}
+/* Model Style */
+.modal-header h4{
+    color: #0088a9;
+    font-family: var(--forth-font);
+}
+
+
+/* header */
+.body__header{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 100vw;
+  }
+  .left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color:pink;
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: black;
+    transform: skew(0deg, 15deg);
+  }
+  .left .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  .body__header span {
+    display: inline-block;
+    font-family: var(--forth-font);
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+  }
+  .my__name{
+    color: #0088a9;
+  }
+
+  .modal-title, .list__info{
+    color: black;
+  }
